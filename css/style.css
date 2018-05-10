@@ -1,0 +1,504 @@
+*{
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f1f1;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	min-width: 480px;
+	max-width: 1920px;
+	margin: 0 auto;
+	background: url("img/background.png") no-repeat;
+	background-size: cover;
+	padding: 0 100px;
+}
+
+li{
+	list-style: none;
+}
+
+header{
+	width: 100%;
+    padding-top: 80px;
+	display: flex;
+}
+
+.header_logo{
+
+	/*margin-top: 101px;*/
+	/*margin-left: 5.4%;*/
+}
+
+nav{
+	margin-left: 22.8%;
+}
+
+.topnav a{
+	color: #2a2a2a;
+	text-align: center;
+	padding: 0 30px;
+	font-size: 18px;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+main .main_welcome{
+	text-align: left;
+	margin: 220px 0 67px 0;
+}
+
+main .main_welcome p{
+	color: #515151;
+	font-size: 36px;
+	padding-right: 51%;
+	margin-top: 60px;
+	font-weight: 400;
+}
+
+main .main_welcome h1{
+	color: #515151;
+	font-size: 60px;
+	padding-right: 40%;
+	font-family: 'Roboto', sans-serif;
+}
+
+button{
+	font-family: 'Roboto', sans-serif;
+}
+
+.submit{
+	text-transform: uppercase;
+	padding: 33px 58px;
+	background: #c13a3a;
+	margin-right: 53px;
+	color: white;
+	display: inline-block;
+}
+
+.download{
+	text-transform: uppercase;
+	padding: 33px 28px;
+	background: #fcfcfc;
+	margin-right: 53px;
+	color: #515151;
+	display: inline-block;
+}
+
+.main_welcome_button{
+	margin-top: 61px;
+	margin-bottom: 368px;
+
+}
+
+.main_about_me {
+	height: 50%;
+	position: right;
+	color: #515151;
+	/*display: flex;*/
+}
+
+.about_right{
+	width: 50%;
+	float: right;
+}
+
+.main_about_me h2 {
+	font-size: 50px;
+	margin-bottom: 136px;
+	display: inline-block;
+}
+
+.main_about_me h2:after {
+	content: ' ';
+	border-bottom: 3px solid #ff6333;
+	display: block;
+	width: 67px;
+	padding-bottom: 36px;
+}
+
+.main_about_me p {
+	font-size: 30px;
+	display: flex;
+}
+
+p.first-paragraph {
+	margin-bottom: 60px;
+}
+
+div .about_left {
+}
+
+div .wrapper{
+	margin: 0 auto;
+	/*width: 75%;*/
+
+}
+
+.mirrorY{
+	transform: scale(-1, 1) rotate(25deg);
+	border-radius: 335px;
+}
+
+div .how_we_are_work{
+	text-align: center;
+	margin-top: 294px;
+	width: 76%;
+	margin: 0 auto;
+	padding: 428px 0 0 0;
+}
+
+.how_we_are_work h1{
+	display: inline-block;
+	font-size: 50px;
+	color: #515151;
+}
+
+.how_we_are_work h1:after{
+	content: ' ';
+	border-bottom: 3px solid #ff6333;
+	display: block;
+	width: 67px;
+	padding-bottom: 36px;
+	margin-bottom: 145px;
+}
+
+.how_we_are_work h4{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 100;
+	position: absolute;
+	top: -35px;
+	right: 90px;
+}
+
+.photo{
+	margin: 20px;
+}
+
+.work_cards{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 160px;
+}
+
+.work_cards::after {
+	content: " ";
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+    z-index: 8;
+   	background: url(../img/dots.png) no-repeat center 45px;
+    background-size: 100%;
+}
+.cards {
+	width: 33.33%;
+	position: relative;
+}
+
+.cards img {
+	position: relative;
+	z-index: 9;
+}
+
+p.about_works{
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.cards:first-child{
+	position: relative;
+}
+
+.work_cards_second{
+	display: flex;
+	margin-top: 187px;
+	margin-bottom: 118px;
+}
+
+div .services{
+	text-align: center;
+	/*height: 979px;*/
+	width: 100%;
+	margin: 0 auto;
+	padding: 76px 0 0 0;
+}
+
+.services h1{
+	display: inline-block;
+	font-size: 50px;
+	color: #515151;
+}
+
+.services h1:after{
+	content: ' ';
+	border-bottom: 3px solid #ff6333;
+	display: block;
+	width: 66px;
+	padding-bottom: 36px;
+	margin-bottom: 145px;
+}
+
+.slider h3{
+	font-family: 'Roboto' sans-serif;
+	font-size: 30px;
+	color: white;
+	top: 0;
+    padding-bottom: 235px;
+    padding-right: 0px;
+    width: 54%;
+    margin-left: 94px;
+}
+
+.sliders{
+	max-width: 1352px;
+}
+
+.slider{
+	position: relative;
+}
+
+.slider_text{
+	position: absolute;
+	bottom: 7%;
+	width: 100%;
+}
+
+.slider_text a{
+	margin-right: -11px;
+}
+
+.why_we h1{
+	display: inline-block;
+	font-size: 50px;
+	color: #515151;
+}
+
+.why_we h1:after{
+	content: ' ';
+	border-bottom: 3px solid #ff6333;
+	display: block;
+	width: 66px;
+	padding-bottom: 36px;
+	margin-bottom: 145px;
+}
+
+.why_we{
+	text-align: center;
+    margin: 0 auto;
+    width: 78%;
+    padding-top: 360px;
+}
+
+.why_we_cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 160px;
+}
+
+
+.cardsme{
+	width: 33.33%;
+}
+
+.cardsme p{
+	font-size: 18px;
+	font-weight: 400;
+	color: #515151;
+}
+
+.price_list h1{
+	display: inline-block;
+	font-size: 50px;
+	color: #515151;
+}
+
+.price_list h1:after{
+	content: ' ';
+	border-bottom: 3px solid #ff6333;
+	display: block;
+	width: 66px;
+	padding-bottom: 36px;
+	margin-bottom: 145px;
+}
+
+.whywelogo{
+	float: left;
+    margin-right: 40px;
+    position: relative;
+    bottom: 30px;
+    max-width: 20%;
+}
+
+.whywetext-container {
+    float: left;
+    text-align: left;
+    max-width: 67%;
+}
+
+.whywetext {
+	font-size: 30px;
+	color: #515151;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.about_whywe{
+	font-size: 18px;
+	color: #6e6e6e;
+    float: center;
+}
+
+.price_list{
+	text-align: center;
+    width: 78%;
+    padding-top: 80px;
+    margin: 0 auto 500px;
+}
+
+table {
+	margin: 0 auto;
+	width: 100%;
+	border-collapse: collapse;
+	border-top: hidden;
+	border-right: hidden;
+	border-left: hidden;
+	border-bottom: hidden;
+	background: #fff;
+	box-shadow: 0 0 50px #adadad;
+}
+
+table td, table th{
+	border: 1px solid #d3d3d3;
+	padding: 45px 0px 45px 0px;
+}
+
+table td{
+	color: #626262;
+}
+
+table th{
+	color: #515151;
+	font-size: 26px;
+    font-weight: 400;
+}
+
+.form_action{
+	width: 33.5%;
+	background: #40587c;
+	text-align: center;
+    padding: 0 12px;
+    position: relative;
+    margin-bottom: 344px;
+}
+
+.form_action .bug {
+    position: absolute;
+    z-index: 100;
+    left: 80px;
+    top: -190px;
+}
+
+.form_action h1 {
+	padding-top: 98px;
+	padding-bottom: 84px;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+input[type="text"], input[type="number"] {
+	width: 75%;
+	height: 86px;
+	font-size: 16px;
+	margin-bottom: 56px;
+	border-radius: 4px;
+	padding-left: 6%;
+}
+
+.dws-submit {
+    padding: 40px 0px;
+    background: #c13a3a;
+    margin-right: 53px;
+    color: white;
+    display: inline-block;
+    border: none;
+    font-size: 20px;
+    width: 75%;
+    margin: 0 auto;
+    list-style: none;
+    margin-bottom: 75px;
+    text-transform: uppercase;
+}
+
+footer {
+	background: #c5dec7;
+	width: 100%;
+}
+
+footer .contact-container{
+	padding-top: 130px;
+    padding-left: 20%;
+    width: 60%;
+    padding-bottom: 79px;
+}
+
+.contact-container>p{
+	padding-bottom: 20px;
+	font-size: 30px;
+	color: #515151;
+}
+
+.last_logo{
+	position: relative;
+    top: 195px;
+}
+
+h5 {
+	font-size: 50px;
+	color: #515151;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.copyright {
+    margin-top: 40px;
+	padding: 40px;
+	text-align: center;
+}
+
+h6 {
+	font-size: 16px;
+	color: #515151;
+	margin-bottom: 26px;
+}
+
+@media screen and (min-width: 750px){
+ /*Для экранов больше 750 пикс*/
+ /*Для планшетов, мониторов, очень больших мониторов и телевизоров*/
+}
