@@ -1,10 +1,11 @@
 let mix = require('laravel-mix');
-mix.pug = require('laravel-mix-blade-pug');
+mix.pug = require('laravel-mix-pug');
 
 let stylus = {
     use: require('nib')()
 };
 
+mix.setPublicPath('dist');
 mix.disableNotifications();
 
 /*
@@ -19,8 +20,9 @@ mix.disableNotifications();
  */
 
 mix
-    .pug(path.join('src', 'templates'), path.join('dist'))
-    .js('src/js/app.js', 'dist/js/')
-    .stylus('src/stylus/app.styl', 'dist/css/', stylus)
     .copyDirectory('src/images', 'dist/images/')
-    .copyDirectory('src/fonts', 'dist/fonts/');
+    .copyDirectory('src/fonts', 'dist/fonts/')
+    .js('src/js/app.js', 'dist')
+    .stylus('src/stylus/app.styl', 'dist', stylus)
+    .pug('src/templates/*.pug', '../../dist')
+    .version();

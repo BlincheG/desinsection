@@ -16,7 +16,7 @@
     "jquery": "^3.2",
     "jquery-mask-plugin": "github:igorescobar/jQuery-Mask-Plugin",
     "laravel-mix": "^2.1.11",
-    "laravel-mix-blade-pug": "^1.0.5",
+    "laravel-mix-pug": "^0.2.1",
     "lodash": "^4.17.4",
     "nib": "^1.1.2",
     "popper.js": "^1.14.3",
