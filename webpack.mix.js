@@ -21,7 +21,7 @@ mix.disableNotifications();
 
 mix
     .copyDirectory('src/images', 'dist/images/')
-    .copyDirectory('src/fonts', 'dist/fonts/')
+    //.copyDirectory('src/fonts', 'dist/fonts/')
     .js('src/js/app.js', 'dist')
     .stylus('src/stylus/app.styl', 'dist', stylus)
     .pug('src/templates/*.pug', '../../dist')
