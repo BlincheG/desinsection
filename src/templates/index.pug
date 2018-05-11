@@ -1,211 +1,240 @@
-doctype html
+doctype
 html(lang='en')
-  head
-    meta(charset='UTF-8')
-    title Дез Сервис
-    link(rel='stylesheet', href='app.css')
-  body
-    .container
-      header
-        .header_logo
-          a(href='#')
-            img(src='images/logo.png', alt='')
-        nav
-          #myTopnav.topnav
-            a(href='#whowe') О компании
-            a(href='#services') Услуги
-            a(href='#price') Цены
-            a(href='#contact') Контакты
-      main
-        .main_welcome
-          h1 Дезинсекция для юридических лиц в г. Алматы.
-          p Полное  и эффективное уничтожение насекомых за короткий промежу
-          .main_welcome_button
-            a.button.submit(href='#') заказать
-            a.button.download(href='#') скачать прайс
-        .wrapper
-          .main_about_me
-            .about_right
-              h2#whowe Кто мы?
-              p.first-paragraph
-                | Мы оказываем услуги по дезинсекции
-                | для юридических лиц, чтобы вы могли
-                | с комфортом работать, не беспокоясь за свое здоровье.
-              p
-                | Обратитесь в нашу компанию и проблемы с
-                | вредителями больше не помешают развитию
-                | вашего бизнеса.
-        .how_we_are_work
-          h1 Как мы работаем?
-          .wrapper
-            .work_cards
-              .cards
-                .photo
-                  img(src='images/item1.png', alt='')
-                h4.numbers 01
-                p.about_works Звонок или заявка с сайта
-              .cards
-                .photo
-                  img(src='images/item2.png', alt='')
-                h4.numbers 02
-                p.about_works Бесплатный выезд специалиста
-              .cards
-                .photo
-                  img(src='images/item3.png', alt='')
-                h4.numbers 03
-                p.about_works Анализ степени заражения и подбор средств
-          .wrapper
-            .work_cards
-              .cards
-                .photo
-                  img(src='images/item4.png', alt='')
-                h4.numbers 04
-                p.about_works Выбор даты и времени дезинсекции
-              .cards
-                .photo
-                  img(src='images/item5.png', alt='')
-                h4.numbers 05
-                p.about_works Обработка  и механическая очистка помещения
-              .cards
-                .photo
-                  img(src='images/item6.png', alt='')
-                h4.numbers 06
-                p.about_works Получение инструкций и рекомендаций
-        .services
-          h1#services Услуги
-          .work_services
-            .sliders data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'
-              .slider
-                img(src='images/slider1.png', alt='Slider 1')
-                .slider_text
-                  h3 Уничтожение муравьев
-                  a.button.submit(href='#') заказать
-              .slider
-                img(src='images/slider2.png', alt='Slider 2')
-                .slider_text
-                  h3 Уничтожение мух
-                  a.button.submit(href='#') заказать
-              .slider
-                img(src='images/slider3.png', alt='Slider 3')
-                .slider_text
-                  h3 Уничтожение клещей
-                  a.button.submit(href='#') заказать
-              .slider
-                img(src='images/slider1.png', alt='Slider 4')
-                .slider_text
-                  h3 Уничтожение муравьев
-                  a.button.submit(href='#') заказать
-              .slider
-                img(src='images/slider2.png', alt='Slider 5')
-                .slider_text
-                  h3 Уничтожение мух
-                  a.button.submit(href='#') заказать
-              .slider
-                img(src='images/slider3.png', alt='Slider 6')
-                .slider_text
-                  h3 Уничтожение клешей 
-                  a.button.submit(href='#') заказать
-        .why_we
-          h1 Почему мы?
-          .wrapper
-            .why_we_cards
-              .cardsme
-                .whywelogo
-                  img(src='images/whymelogo1.png', alt='')
-                .whywetext-container
-                  h4.whywetext Оперативность
-                  p.about_whywe Выезд мастера в день обращения
-              .cardsme
-                .whywelogo
-                  img(src='images/whymelogo2.png', alt='')
-                .whywetext-container
-                  h4.whywetext Безопасность
-                  p.about_whywe Безопасные химические составы
-              .cardsme
-                .whywelogo
-                  img(src='images/whymelogo3.png', alt='')
-                .whywetext-container
-                  h4.whywetext Конфиденциальность
-                  p.about_whywe Никто не узнает о вашей проблеме
-          .wrapper
-            .why_we_cards
-              .cardsme
-                .whywelogo
-                  img(src='images/whymelogo4.png', alt='')
-                .whywetext-container
-                  h4.whywetext Новейшие технологии
-                  p.about_whywe Мы используем технологии холодного и горячего тумана
-              .cardsme
-                .whywelogo
-                  img(src='images/whymelogo5.png', alt='')
-                .whywetext-container
-                  h4.whywetext Профессионализм
-                  p.about_whywe Специалисты со стажем работы свыше 5 лет
-              .cardsme
-                .whywelogo
-                  img(src='images/whymelogo6.png', alt='')
-                .whywetext-container
-                  h4.whywetext Гарантия
-                  p.about_whywe Гарантия результата до 3-х лет
-        .price_list
-          h1#price Прайс лист
-          table
-            thead
-              tr
-                th Площадь помещения, м²
-                th Разовая обработка
-                th Последующие обработки
-                th Постоянная обработка
-            tbody
-              tr
-                td до 100 м²
-                td  
-                td  
-                td  
-              tr
-                td от 101 - 200 м²
-                td  
-                td  
-                td  
-              tr
-                td от 201 - 500 м²
-                td  
-                td  
-                td  
-              tr
-                td от 501 - 1000 м²
-                td  
-                td  
-                td  
-              tr
-                td Свыше 1000 м²
-                td  
-                td  
-                td  
-        .form_action
-          img.bug(src='images/bug.png')
-          h1 Оставьте заявку на бесплатный вызов специалиста!
-          form(action='')
-            .dws-input
-              input(type='text', name='username', placeholder='Имя')
-              input(type='number', name='phone', placeholder='Телефон')
-              input.dws-submit(type='submit', name='submit', value='Заказать')
-    footer
-      .contact
-        img.last_logo(src='images/last_logo.png', alt='')
-        .contact-container
-          h5#contact Контакты
-          p
-            strong Адрес:
-            |  «БЦ Нурлы-Тау» проспект Аль-Фараби, 19 блок 3Б, 8 этаж
-          p
-            strong Телефон:
-            |  +7 (727) 277 76 00
-          p
-            strong Email:
-            |  info@muratov.kz
-    .copyright
-      h6 Все права защищены 
-      p 2018
-    
-    script(src='app.js' type='text/javascript')
+    head
+        meta(charset='UTF-8')
+        title Дез Сервис
+        link(rel='stylesheet', href='app.css')
+    body
+        .fixed-right-man
+            img(src="images/desinsection_logo_main.png")
+
+        .container
+            header
+                .header_logo
+                    a(href='#')
+                        img(src='images/logo.png', alt='')
+                nav
+                    #myTopnav.topnav
+                        a(href='#whowe') О компании
+                        a(href='#services') Услуги
+                        a(href='#price') Цены
+                        a(href='#contact') Контакты
+        .body-content
+            section.main_welcome
+                .container.main_welcome-wrap
+                    h1 Профессионализм и качество.
+                    p Гарантированный эффект уничтожения вредителей и насекомых.
+                    .main_welcome_button-wrap
+                        a.button.submit(href='#') заказать
+                        a.button.download(href='#') скачать прайс
+
+            section.main_about_me
+                .about_me-wrap
+                    .about_me-wrap-left
+                    .about_me-wrap-right
+                        h1.about_me-title Кто мы?
+                        .about_me-description
+                            p
+                                | Команда сертифицированных профессионалов,
+                                | каждый день мы боремся за комфорт наших клиентов.
+                            p
+                                | Многолетний опыт работы, использование только 
+                                | качественной химии и профессионального оборудования
+                                | дает нам возможность с гордостью говорить о том, что
+                                | наша работа выполняется на высочайшем уровне.
+                            p
+                                | Сервис и лояльность наших клиентов — это то, чем мы
+                                | дорожим, поэтому мы никогда не пренебрегаем
+                                | пожеланиями клиента.
+                            p
+                                | Мы гарантируем моментальный результат наших работ!
+
+
+                .about_me-background
+                        img(src='images/whyWeLogo.png', alt='')
+                
+
+            section.how_we_are_work
+                .container
+                    h1 Как мы работаем?
+                    .work_cards
+                        .cards
+                            .photo
+                                img(src='images/item1.png', alt='')
+                            h4.numbers 01
+                            p.about_works Звонок или заявка с сайта
+                        .cards
+                            .photo
+                                img(src='images/item2.png', alt='')
+                            h4.numbers 02
+                            p.about_works Бесплатный выезд специалиста
+                        .cards
+                            .photo
+                                img(src='images/item3.png', alt='')
+                            h4.numbers 03
+                            p.about_works Анализ степени заражения и подбор средств
+
+                        .cards
+                            .photo
+                                img(src='images/item4.png', alt='')
+                            h4.numbers 04
+                            p.about_works Выбор даты и времени дезинсекции
+                        .cards
+                            .photo
+                                img(src='images/item5.png', alt='')
+                            h4.numbers 05
+                            p.about_works Обработка    и механическая очистка помещения
+                        .cards
+                            .photo
+                                img(src='images/item6.png', alt='')
+                            h4.numbers 06
+                            p.about_works Получение инструкций и рекомендаций
+                        .cards
+                            .photo
+                                img(src='images/item7.png', alt='')
+                            h4.numbers 07
+                            p.about_works Счастливый клиент
+
+            section.services
+                h1#services Услуги
+                .work_services
+                    .sliders data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'
+                        .slider
+                            img(src='images/slider1.png', alt='Slider 1')
+                            .slider_text
+                                h3 Уничтожение муравьев
+                                a.button.submit(href='#') заказать
+                        .slider
+                            img(src='images/slider2.png', alt='Slider 2')
+                            .slider_text
+                                h3 Уничтожение мух
+                                a.button.submit(href='#') заказать
+                        .slider
+                            img(src='images/slider3.png', alt='Slider 3')
+                            .slider_text
+                                h3 Уничтожение клещей
+                                a.button.submit(href='#') заказать
+                        .slider
+                            img(src='images/slider4.png', alt='Slider 4')
+                            .slider_text
+                                h3 Уничтожение тараканов
+                                a.button.submit(href='#') заказать
+                        .slider
+                            img(src='images/slider5.png', alt='Slider 5')
+                            .slider_text
+                                h3 Уничтожение тараканов
+                                a.button.submit(href='#') заказать
+                        .slider
+                            img(src='images/slider6.png', alt='Slider 6')
+                            .slider_text
+                                h3 Уничтожение постельных клопов
+                                a.button.submit(href='#') заказать
+                        .slider
+                            img(src='images/slider7.png', alt='Slider 6')
+                            .slider_text
+                                h3 Уничтожение крыс 
+                                a.button.submit(href='#') заказать
+            section.why_we
+                h1 Почему мы?
+                .wrapper
+                    .why_we_cards
+                        .cardsme
+                            .whywelogo
+                                img(src='images/whymelogo1.png', alt='')
+                            .whywetext-container
+                                h4.whywetext Оперативность
+                                p.about_whywe Выезд мастера в день обращения
+                        .cardsme
+                            .whywelogo
+                                img(src='images/whymelogo2.png', alt='')
+                            .whywetext-container
+                                h4.whywetext Безопасность
+                                p.about_whywe Безопасные химические составы
+                        .cardsme
+                            .whywelogo
+                                img(src='images/whymelogo3.png', alt='')
+                            .whywetext-container
+                                h4.whywetext Конфиденциальность
+                                p.about_whywe Никто не узнает о вашей проблеме
+                .wrapper
+                    .why_we_cards
+                        .cardsme
+                            .whywelogo
+                                img(src='images/whymelogo4.png', alt='')
+                            .whywetext-container
+                                h4.whywetext Новейшие технологии
+                                p.about_whywe Мы используем технологии холодного и горячего тумана
+                        .cardsme
+                            .whywelogo
+                                img(src='images/whymelogo5.png', alt='')
+                            .whywetext-container
+                                h4.whywetext Профессионализм
+                                p.about_whywe Специалисты со стажем работы свыше 5 лет
+                        .cardsme
+                            .whywelogo
+                                img(src='images/whymelogo6.png', alt='')
+                            .whywetext-container
+                                h4.whywetext Гарантия
+                                p.about_whywe Гарантия результата до 3-х лет
+            section.price_list
+                h1#price Прайс лист
+                table
+                    thead
+                        tr
+                            th Площадь помещения, м²
+                            th Разовая обработка
+                            th Последующие обработки
+                            th Постоянная обработка
+                    tbody
+                        tr
+                            td до 100 м²
+                            td  
+                            td  
+                            td  
+                        tr
+                            td от 101 - 200 м²
+                            td  
+                            td  
+                            td  
+                        tr
+                            td от 201 - 500 м²
+                            td  
+                            td  
+                            td  
+                        tr
+                            td от 501 - 1000 м²
+                            td  
+                            td  
+                            td  
+                        tr
+                            td Свыше 1000 м²
+                            td  
+                            td  
+                            td  
+            section.form_action
+                img.bug(src='images/bug.png')
+                h1 Оставьте заявку на бесплатный вызов специалиста!
+                form(action='')
+                    .dws-input
+                        input(type='text', name='username', placeholder='Имя')
+                        input(type='number', name='phone', placeholder='Телефон')
+                        input.dws-submit(type='submit', name='submit', value='Заказать')
+        footer
+            .contact
+                img.last_logo(src='images/last_logo.png', alt='')
+                .contact-container
+                    h5#contact Контакты
+                    p
+                        strong Адрес:
+                        |    «БЦ Нурлы-Тау» проспект Аль-Фараби, 19 блок 3Б, 8 этаж
+                    p
+                        strong Телефон:
+                        |    +7 (727) 277 76 00
+                    p
+                        strong Email:
+                        |    info@muratov.kz
+        .copyright
+            h6 Все права защищены 
+            p 2018
+        
+        script(src='app.js' type='text/javascript')
