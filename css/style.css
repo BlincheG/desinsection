@@ -378,6 +378,7 @@ div .services{
     width: 78%;
     padding-top: 80px;
     margin: 0 auto 500px;
+    box-shadow: 0 0 50px #adadad;
 }
 
 table {
@@ -389,7 +390,6 @@ table {
 	border-left: hidden;
 	border-bottom: hidden;
 	background: #fff;
-	box-shadow: 0 0 50px #adadad;
 }
 
 table td, table th{
@@ -413,7 +413,6 @@ table th{
 	text-align: center;
     padding: 0 12px;
     position: relative;
-    margin-bottom: 344px;
 }
 
 .form_action .bug {
@@ -453,49 +452,6 @@ input[type="text"], input[type="number"] {
     margin: 0 auto;
     list-style: none;
     margin-bottom: 75px;
-    text-transform: uppercase;
-}
-
-footer {
-	background: #c5dec7;
-	width: 100%;
-}
-
-footer .contact-container{
-	padding-top: 130px;
-    padding-left: 20%;
-    width: 60%;
-    padding-bottom: 79px;
-}
-
-.contact-container>p{
-	padding-bottom: 20px;
-	font-size: 30px;
-	color: #515151;
-}
-
-.last_logo{
-	position: relative;
-    top: 195px;
-}
-
-h5 {
-	font-size: 50px;
-	color: #515151;
-	margin-bottom: 30px;
-	text-align: center;
-}
-
-.copyright {
-    margin-top: 40px;
-	padding: 40px;
-	text-align: center;
-}
-
-h6 {
-	font-size: 16px;
-	color: #515151;
-	margin-bottom: 26px;
 }
 
 @media screen and (min-width: 750px){
