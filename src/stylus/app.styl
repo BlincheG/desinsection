@@ -56,14 +56,6 @@ section
     img
         max-width 80%
         display inline
-            &.limiter-1360x
-                width 1360px
-            &.limiter-768x
-                width 768px
-            &.limiter-480x
-                width 480px
-            &.limiter-330x
-                width 330px
 
 header
     width: 100%;
@@ -436,9 +428,8 @@ table th{
     font-weight: 400;
 }
 
-.form_action{
-    width: 100%;
-}
+.form_action
+    width 100%
 
 .for
     width: 33.33%;
@@ -453,6 +444,13 @@ table th{
     z-index: 100;
     left: 80px;
     top: -190px;
+}
+
+.form_background {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    height: 100%;
 }
 
 .form_action h1 {
@@ -527,4 +525,18 @@ h6 {
     font-size: 16px;
     color: #515151;
     margin-bottom: 26px;
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+    .fixed-right-man {
+        width: 60%;
+    }
+
+    .about_me-background {
+        width: 60%;
+    }
+
+    .about_me-second-background>img {
+        width: 20%
+    }   
 }

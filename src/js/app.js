@@ -76,6 +76,7 @@ $(document).ready(function(){
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
+                    centerMode: true
                 }
             },
             {
@@ -86,6 +87,18 @@ $(document).ready(function(){
             },
             {
                 breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 330,
                 settings: {
                     slidesToShow: 1
                 }
