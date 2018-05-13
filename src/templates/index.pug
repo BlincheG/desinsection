@@ -8,17 +8,17 @@ html(lang='en')
         .fixed-right-man
             img(src="images/desinsection_logo_main.png")
 
+        header
+            .header_logo
+                a(href='#')
+                    img(src='images/logo.png', alt='')
+            nav
+                #myTopnav.topnav
+                    a(href='#whowe') О компании
+                    a(href='#services') Услуги
+                    a(href='#price') Цены
+                    a(href='#contact') Контакты
         .container
-            header
-                .header_logo
-                    a(href='#')
-                        img(src='images/logo.png', alt='')
-                nav
-                    #myTopnav.topnav
-                        a(href='#whowe') О компании
-                        a(href='#services') Услуги
-                        a(href='#price') Цены
-                        a(href='#contact') Контакты
         .body-content
             section.main_welcome
                 .container.main_welcome-wrap
@@ -27,11 +27,17 @@ html(lang='en')
                     .main_welcome_button-wrap
                         a.button.submit(href='#') заказать
                         a.button.download(href='#') скачать прайс
-
+                
             section.main_about_me
                 .about_me-wrap
                     .about_me-wrap-left
+                        .about_me-background
+                            img(src='images/whyWeLogo.png', alt='')
+                            .about_me-second-background
+                                img(src='images/cockroach.png', alt='')
                     .about_me-wrap-right
+                        .about_me-third-background
+                            img(src='images/wasp.png', alt='')
                         h1.about_me-title Кто мы?
                         .about_me-description
                             p
@@ -50,13 +56,11 @@ html(lang='en')
                                 | Мы гарантируем моментальный результат наших работ!
 
 
-                .about_me-background
-                        img(src='images/whyWeLogo.png', alt='')
-                
 
             section.how_we_are_work
                 .container
                     h1 Как мы работаем?
+                    
                     .work_cards
                         .cards
                             .photo
@@ -95,42 +99,45 @@ html(lang='en')
                             h4.numbers 07
                             p.about_works Счастливый клиент
 
+                .how-work-back-spider
+                    img(src="images/spider.png", alt='')
+
             section.services
                 h1#services Услуги
-                .work_services
-                    .sliders data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'
+                .container.limiter-1360x.work_services
+                    .sliders 
                         .slider
-                            img(src='images/slider1.png', alt='Slider 1')
+                            .slider-bg(style="background-image: url('images/slider1.png')")
                             .slider_text
                                 h3 Уничтожение муравьев
                                 a.button.submit(href='#') заказать
                         .slider
-                            img(src='images/slider2.png', alt='Slider 2')
+                            .slider-bg(style="background-image: url('images/slider2.png')")
                             .slider_text
                                 h3 Уничтожение мух
                                 a.button.submit(href='#') заказать
                         .slider
-                            img(src='images/slider3.png', alt='Slider 3')
+                            .slider-bg(style="background-image: url('images/slider3.png')")
                             .slider_text
                                 h3 Уничтожение клещей
                                 a.button.submit(href='#') заказать
                         .slider
-                            img(src='images/slider4.png', alt='Slider 4')
+                            .slider-bg(style="background-image: url('images/slider4.png')")
                             .slider_text
                                 h3 Уничтожение тараканов
                                 a.button.submit(href='#') заказать
                         .slider
-                            img(src='images/slider5.png', alt='Slider 5')
+                            .slider-bg(style="background-image: url('images/slider5.png')")
                             .slider_text
                                 h3 Уничтожение тараканов
                                 a.button.submit(href='#') заказать
                         .slider
-                            img(src='images/slider6.png', alt='Slider 6')
+                            .slider-bg(style="background-image: url('images/slider6.png')")
                             .slider_text
                                 h3 Уничтожение постельных клопов
                                 a.button.submit(href='#') заказать
                         .slider
-                            img(src='images/slider7.png', alt='Slider 6')
+                            .slider-bg(style="background-image: url('images/slider7.png')")
                             .slider_text
                                 h3 Уничтожение крыс 
                                 a.button.submit(href='#') заказать
@@ -212,16 +219,19 @@ html(lang='en')
                             td  
                             td  
             section.form_action
-                img.bug(src='images/bug.png')
-                h1 Оставьте заявку на бесплатный вызов специалиста!
-                form(action='')
-                    .dws-input
-                        input(type='text', name='username', placeholder='Имя')
-                        input(type='number', name='phone', placeholder='Телефон')
-                        input.dws-submit(type='submit', name='submit', value='Заказать')
+                .form_background
+                    img(src="images/form_background.png", alt="")
+                .for
+                    img.bug(src='images/bug.png')
+                    h1 Оставьте заявку на бесплатный вызов специалиста!
+                    form(action='')
+                        .dws-input
+                            input(type='text', name='username', placeholder='Имя')
+                            input(type='number', name='phone', placeholder='Телефон')
+                            input.dws-submit(type='submit', name='submit', value='Заказать')
         footer
             .contact
-                img.last_logo(src='images/last_logo.png', alt='')
+                img.last_logo(src='images/logo.png', alt='', href="#")
                 .contact-container
                     h5#contact Контакты
                     p
