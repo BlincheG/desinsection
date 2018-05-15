@@ -334,16 +334,15 @@ header
 }
 
 .why_we_cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+    overflow: hidden;
     margin-bottom: 160px;
 }
 
 
 .cardsme{
+    float: left;
     width: 33.33%;
+    //padding: 0 60px;
 }
 
 .cardsme p{
@@ -371,7 +370,6 @@ header
     float: left;
     margin-right: 40px;
     position: relative;
-    bottom: 30px;
     max-width: 20%;
 }
 
@@ -538,5 +536,32 @@ h6 {
 
     .about_me-second-background>img {
         width: 20%
-    }   
+    }  
+
+    .whywetext-container h4 {
+    font-size: 23px;
+    }
+}
+
+@media (max-width: 767px) {
+  .cardsme {
+    width: 50%;
+  }
+
+  .cardsme p {
+    font-size: 12px;
+  }
+
+  .cardsme .whywetext {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .whywetext-container {
+    text-align: center;
+  }
+
+  .whywetext-container h4 {
+    font-size: 23px;
+  }
 }
