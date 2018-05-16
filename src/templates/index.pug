@@ -2,6 +2,8 @@ doctype
 html(lang='en')
     head
         meta(charset='UTF-8')
+        meta(meta http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
         title Дез Сервис
         link(rel='stylesheet', href='app.css')
     body
@@ -246,35 +248,23 @@ html(lang='en')
                             button(type="submit") Заказать
 
         footer
-            .contant-wrap-container
-                .contact-wrap-container-title.footer-title Контакты
-            .under-logo
-                img.last_logo(src='images/logo.png', alt='', href="#")
-            .contact-wrap-footer-description.footer-description
-                p
-                    strong Адрес:
-                    |    «БЦ Нурлы-Тау» проспект Аль-Фараби, 19 блок 3Б, 8 этаж
-                p
-                    strong Телефон:
-                    |    +7 (727) 277 76 00
-                p
-                    strong Email:
-                    |    info@muratov.kz
+            .footer-wrap.container
+                .footer-leftside
+                    a.footer-logo(href="#")
+                        img(src='images/logo.png', alt='', href="#")
+                .footer-rightside
+                    .footer-title Контакты
+                    .footer-description
+                        p
+                            label Адрес
+                            span «БЦ Нурлы-Тау» проспект Аль-Фараби, 19 блок 3Б, 8 этаж
+                        p
+                            label Телефон
+                            span +7 (727) 277 76 00
+                        p
+                            label Email
+                            span info@muratov.kz
 
-        footer
-            .contact
-                img.last_logo(src='images/logo.png', alt='', href="#")
-                .contact-container
-                    h5#contact Контакты
-                    p
-                        strong Адрес:
-                        |    «БЦ Нурлы-Тау» проспект Аль-Фараби, 19 блок 3Б, 8 этаж
-                    p
-                        strong Телефон:
-                        |    +7 (727) 277 76 00
-                    p
-                        strong Email:
-                        |    info@muratov.kz
         .copyright
             h6 Все права защищены 
             p 2018
