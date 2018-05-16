@@ -9,14 +9,14 @@ require('./vue');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
+ */
  
-
 require('jquery-mask-plugin');
 
  /*
  * Form handler
  */
-$('.section-cta__form > form')
+$('#contact_us')
     .on('submit', function(e)
     {
         e.preventDefault();
@@ -73,10 +73,18 @@ $(document).ready(function(){
         mobileFirst:true,
         responsive: [
             {
+            breakpoint: 1527,
+            settings: {
+                slidesToShow: 3,
+                variableWidth: false
+                }
+            },
+            {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
-                    centerMode: true
+                    centerMode: true,
+                    variableWidth: false
                 }
             },
             {
@@ -105,4 +113,12 @@ $(document).ready(function(){
             }
         ]
     });
+});
+
+$(document).ready(function(){
+
+  $('.navicon').click(function(e){
+    $(this).next().slideToggle(500);
+  });
+
 });
