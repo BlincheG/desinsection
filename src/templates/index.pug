@@ -3,8 +3,9 @@ html(lang='en')
     head
         meta(charset='UTF-8')
         meta(meta http-equiv="X-UA-Compatible" content="IE=edge")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, min-width=400")
-        title Дез Сервис
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        title Пестхантер
         link(rel='stylesheet', href='app.css')
     body
         header
@@ -17,7 +18,7 @@ html(lang='en')
                 .header-nav
                     ul.header-nav-menu
                         li
-                            a(href="#whowe") О компании
+                            a(href="#whowe") О нас
                         li
                             a(href="#services") Услуги
                         li
@@ -34,7 +35,7 @@ html(lang='en')
                     img(src="/images/desinsection_logo_main.png")
 
                 .container.welcome-section-wrap
-                    .welcome-section-title.section-title Профессионализм и качество.
+                    .welcome-section-title.section-title Профессионализм и качество
 
                     .welcome-section-description.section-description
                         p Гарантированный эффект уничтожения вредителей и насекомых.
@@ -48,7 +49,7 @@ html(lang='en')
                 .container.limiter-1360x.about-us-section-wrap
                     .about-us-section-left
                     .about-us-section-right
-                        .about-us-section-title.section-title Кто мы?
+                        .about-us-section-title.section-title#whowe Кто мы?
                         .about-us-section-description.section-description
                             p
                                 | Команда сертифицированных профессионалов,
@@ -67,7 +68,8 @@ html(lang='en')
             
             section.how-work-section
                 .how-work-wrap.container
-                    h1#how-work Как мы работаем?
+                    div(style="text-align: center")
+                        .how-work-section-title.section-title Как мы работаем?
                     .how-work-section-description
                         .how-work-items
                             .how-work-item
@@ -160,48 +162,56 @@ html(lang='en')
 
             section.why-we-section
                 .why-we-wrap.container
-                    .why-we-section-title.section-title Почему мы?
+                    div(style="text-align: center")
+                        .why-we-section-title.section-title Почему мы?
                     .why-we-section-description
                         .why-we-items
                             .why-we-item
                                 .we-item-image
                                     img(src='images/whymelogo1.png', alt='')
-                                .we-item-title Оперативность
-                                .we-item-text Выезд мастера в день обращения
+                                .why-item-description
+                                    .we-item-title Оперативность
+                                    .we-item-text Выезд мастера в день обращения
 
                             .why-we-item
                                 .we-item-image
                                     img(src='images/whymelogo2.png', alt='')
-                                .we-item-title Безопасность
-                                .we-item-text Безопасные химические составы
+                                .why-item-description
+                                    .we-item-title Безопасность
+                                    .we-item-text Безопасные химические составы
 
                             .why-we-item
                                 .we-item-image
                                     img(src='images/whymelogo3.png', alt='')
-                                .we-item-title Конфиденциальность
-                                .we-item-text Никто не узнает о вашей проблеме
+                                .why-item-description
+                                    .we-item-title Конфиденциальность
+                                    .we-item-text Никто не узнает о вашей проблеме
 
                             .why-we-item
                                 .we-item-image
                                     img(src='images/whymelogo4.png', alt='')
-                                .we-item-title Новейшие технологии
-                                .we-item-text Мы используем технологии холодного и горячего тумана
+                                .why-item-description
+                                    .we-item-title Новейшие технологии
+                                    .we-item-text Мы используем технологии холодного и горячего тумана
 
                             .why-we-item
                                 .we-item-image
                                     img(src='images/whymelogo5.png', alt='')
+                                .why-item-description
                                 .we-item-title Профессионализм
                                 .we-item-text Специалисты со стажем работы свыше 5 лет
 
                             .why-we-item
                                 .we-item-image
                                     img(src='images/whymelogo6.png', alt='')
-                                .we-item-title Гарантия
-                                .we-item-text Гарантия результата до 3-х лет
+                                .why-item-description
+                                    .we-item-title Гарантия
+                                    .we-item-text Гарантия результата до 3-х лет
 
             section.price-section
                 .price-section-wrap.container
-                    .price-section-title.section-title Прайс лист
+                    div(style="text-align: center")
+                        .price-section-title.section-title#price Прайс лист
                     .price-section-content
                         table.price-table
                             thead
@@ -252,7 +262,7 @@ html(lang='en')
                             button(type="submit") Заказать
 
         footer
-            .footer-wrap.container
+            .footer-wrap.container#contact
                 .footer-leftside
                     a.footer-logo(href="#")
                         img(src='images/logo.png', alt='', href="#")
