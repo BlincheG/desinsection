@@ -18,12 +18,6 @@ body
     font-family 'Roboto', sans-serif
     font-size 14px
 
-.navicon {
-  float: right;
-  transform: rotate(90deg);
-  display: none;
-}
-
 .container
     width 990px
     margin-left auto
@@ -123,6 +117,37 @@ header
             display block
             padding 0px 25px
 
+    .header-contact
+        display flex
+        flex-direction column
+        font-size 1.2rem
+        color #666
+        font-family Roboto
+        font-weight 500
+        text-align center
+        flex-basis 20%
+
+        p
+            padding 5px 0px
+            font-weight 700
+            font-size 1.4rem
+
+            &:last-child
+                font-size 0.8rem
+
+        .contact-phone-btn
+            margin 10px 0
+
+            a
+                border-radius 20px
+                border 1px solid green
+                padding 10px 15px
+                color green
+                text-transform uppercase
+                font-size 0.9rem
+
+        @media screen and (max-width 1100px)
+            display none
 
     .header-background
         position absolute
