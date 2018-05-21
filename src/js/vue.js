@@ -5,6 +5,7 @@ Vue.use(VueResource);
 import CallbackComponent from './components/CallbackComponent';
 import CongratsComponent from './components/CongratsComponent';
 import ModalComponent from './components/ModalComponent';
+import MenuComponent from './components/MenuComponent';
 
 var components = [
     {
@@ -21,7 +22,12 @@ var components = [
         name: 'congrats-component',
         wrap: '#CongratsComponent',
         app: CongratsComponent
-    }
+    },
+        {
+        name: 'menu-component',
+        wrap: '#MenuComponent',
+        app: MenuComponent
+    },
 ];
 
 /* before, register component */

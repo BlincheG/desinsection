@@ -115,10 +115,11 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
 
-  $('.navicon').click(function(e){
-    $(this).next().slideToggle(500);
-  });
+(function($)
+{
+    $('.header-menu').on('click', function() {
+        $('.menu-modal-trigger').trigger('click');
+    });
 
-});
+})(jQuery);
