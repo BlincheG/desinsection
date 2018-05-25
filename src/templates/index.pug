@@ -15,7 +15,7 @@ html(lang='en')
                 .header-logo
                     a(href="#" title="")
                         img(src="/images/logo.png")
-                .header-nav
+                .header-nav#menu
                     ul.header-nav-menu
                         li
                             a(href="#whowe") О нас
@@ -44,9 +44,9 @@ html(lang='en')
                     img(src="/images/desinsection_logo_main.png")
 
                 .container.welcome-section-wrap
-                    .welcome-section-title.section-title Профессионализм и качество
+                    .welcome-section-title.section-title.wow.fadeInDown Профессионализм и качество
 
-                    .welcome-section-description.section-description
+                    .welcome-section-description.section-description.wow.slideInDown
                         p Гарантированный эффект уничтожения вредителей и насекомых.
                     .welcome-section-actions
                         a.welcome-button.button-submit.callback-trigger(href='#') заказать
@@ -58,8 +58,8 @@ html(lang='en')
                 .container.limiter-1360x.about-us-section-wrap
                     .about-us-section-left
                     .about-us-section-right
-                        .about-us-section-title.section-title#whowe Кто мы?
-                        .about-us-section-description.section-description
+                        .about-us-section-title.section-title#whowe.wow.fadeInRight(data-wow-delay="0.1") Кто мы?
+                        .about-us-section-description.section-description.wow.fadeInRight(data-wow-delay='0.2')
                             p
                                 | Команда сертифицированных профессионалов,
                                 | каждый день мы боремся за комфорт наших клиентов.
@@ -80,43 +80,43 @@ html(lang='en')
                     div(style="text-align: center")
                         .how-work-section-title.section-title Как мы работаем?
                     .how-work-section-description
-                        .how-work-items
+                        .how-work-items.wow.zoomIn(data-wow-delay='0.2')
                             .how-work-item
                                 .work-item-image
                                     img(src='images/item1.png', alt='')
                                 .work-item-title Звонок или заявка с сайта
                                 .work-item-number 01
-                            .how-work-item
+                            .how-work-item.wow.zoomIn(data-wow-delay='0.2')
                                 .work-item-image
                                     img(src='images/item2.png', alt='')
                                 .work-item-title Бесплатный выезд специалиста
                                 .work-item-number 02
                             
-                            .how-work-item
+                            .how-work-item.wow.zoomIn(data-wow-delay='0.2')
                                 .work-item-image
                                     img(src='images/item3.png', alt='')
                                 .work-item-title Анализ степени заражения и подбор средств
                                 .work-item-number 03
 
-                            .how-work-item
+                            .how-work-item.wow.zoomIn(data-wow-delay='0.4')
                                 .work-item-image
                                     img(src='images/item4.png', alt='')
                                 .work-item-title Выбор даты и времени дезинсекции
                                 .work-item-number 04                           
                             
-                            .how-work-item
+                            .how-work-item.wow.zoomIn(data-wow-delay='0.4')
                                 .work-item-image
                                     img(src='images/item5.png', alt='')
                                 .work-item-title Обработка и механическая очистка помещения
                                 .work-item-number 05
 
-                            .how-work-item
+                            .how-work-item.wow.zoomIn(data-wow-delay='0.4')
                                 .work-item-image
                                     img(src='images/item6.png', alt='')
                                 .work-item-title Получение инструкций и рекомендаций
                                 .work-item-number 06
 
-                            .how-work-item
+                            .how-work-item.wow.zoomIn(data-wow-delay='0.6')
                                 .work-item-image
                                     img(src='images/item7.png', alt='')
                                 .work-item-title Счастливый клиент
@@ -131,7 +131,7 @@ html(lang='en')
                     | Обслуживание коммерческих помещений, складов,
                     br
                     | технических помещений, помещений общественного питания.
-                .container.limiter-1360x.work_services
+                .container.limiter-1360x.work_services.wow.fadeIn
                     .sliders 
                         .slider
                             .slider-bg(style="background-image: url('images/slider1.png')")
@@ -174,7 +174,7 @@ html(lang='en')
                     div(style="text-align: center")
                         .why-we-section-title.section-title Почему мы?
                     .why-we-section-description
-                        .why-we-items
+                        .why-we-items.wow.zoomIn(data-wow-delay='0.2')
                             .why-we-item
                                 .we-item-image
                                     img(src='images/whymelogo1.png', alt='')
@@ -221,7 +221,7 @@ html(lang='en')
                 .price-section-wrap.container
                     div(style="text-align: center")
                         .price-section-title.section-title#price Прайс лист
-                    .price-section-content
+                    .price-section-content.wow.bounceInLeft
                         table.price-table
                             thead
                                 tr
@@ -256,10 +256,34 @@ html(lang='en')
                                     td  
                                     td 
 
+            section.pest
+                h1#pest Последствия от вредителей
+                .container.limiter-1360x.work_services.wow.zoomIn(data-wow-delay='0.2')
+                    .sliderss
+                        .slider
+                            .slider-bg(style="background-image: url('images/pest1.jpg')")
+                            .sliderss-text Аллергические реакции
+
+                        .slider
+                            .slider-bg(style="background-image: url('images/pest2.jpg')")
+                            .sliderss-text Нервные стрессы
+
+                        .slider
+                            .slider-bg(style="background-image: url('images/pest3.jpg')")
+                            .sliderss-text Эстетический дискомфорт
+
+                        .slider
+                            .slider-bg(style="background-image: url('images/pest4.jpg')")
+                            .sliderss-text Эпидемии болезней
+
+                        .slider
+                            .slider-bg(style="background-image: url('images/pest5.jpg')")
+                            .sliderss-text Физический ущерб
+
             section.contact-us-section
                 .contact-us-background
                     img(src='images/form_background.png', alt='')
-                .contact-us-wrap.container
+                .contact-us-wrap.container.wow.bounceInUp
                     .contact-us-form
                         .form-overlay
                         .bug-image
@@ -272,10 +296,10 @@ html(lang='en')
 
         footer
             .footer-wrap.container#contact
-                .footer-leftside
+                .footer-leftside.wow.fadeInLeft
                     a.footer-logo(href="#")
                         img(src='images/logo.png', alt='', href="#")
-                .footer-rightside
+                .footer-rightside.wow.fadeInRight
                     .footer-title Контакты
                     .footer-description
                         p
@@ -306,3 +330,4 @@ html(lang='en')
         div(style="display: none" class="menu-modal-trigger")    
 
         script(src='app.js' type='text/javascript')
+        script(src='wow.min.js' type='text/javascript')

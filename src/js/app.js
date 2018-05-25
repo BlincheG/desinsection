@@ -13,9 +13,14 @@ require('./vue');
  
 require('jquery-mask-plugin');
 
+window.WOW = require('wowjs/dist/wow.js');
+
+new window.WOW.WOW().init();
+
  /*
  * Form handler
  */
+
 $('#contact_us')
     .on('submit', function(e)
     {
@@ -113,6 +118,55 @@ $(document).ready(function(){
             }
         ]
     });
+
+    $('.sliderss').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        mobileFirst:true,
+        dots: true,
+        responsive: [
+            {
+            breakpoint: 1527,
+            settings: {
+                slidesToShow: 3,
+                variableWidth: false
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: true,
+                    variableWidth: false
+                }
+            },
+            {
+                breakpoint: 990,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 330,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });
 
 
@@ -123,3 +177,28 @@ $(document).ready(function(){
     });
 
 })(jQuery);
+
+$(window).scroll(function() {
+    $('.section-description').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+            $(this).addClass("slideUp");
+        }
+    });
+});
+
+$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+
+});
